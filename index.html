@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Fryer Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">Have a receipe that requires a traditional oven? Enter the temperature and time below to convert the instructions for an air fryer!</div>
+
+    <div class="container">
+        <div class="header">Oven Directions</div>
+        <div id="ovenTemp">
+            <div>Oven Temp:</div>
+            <input type="number" id="temp">
+        
+        </div>
+        <div id="ovenTime">
+            <div>Oven Time:</div>
+            <input type="number" id="time">
+        </div>
+        <div class="header">Air Fryer Directions</div>
+        <div class="airFryContainer">
+            <div id="airCont"> 
+                <div class="airTemp">
+                    Air Fryer Temp:
+                </div>
+                <div class="airFryResult"></div>
+            </div>
+            <div id="airContTime">
+                <div class="airTime">Air Fryer Time:</div>
+                <div class="airTimeResult"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
