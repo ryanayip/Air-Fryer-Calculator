@@ -13,21 +13,24 @@
             <h3 class="mt-3">Oven Directions</h3>
             <div class="mb-3 mt-3">
                 <label for="ovenTemp" class="form-label">Oven Temp</label>
-                <input type="number" class="form-control" id="ovenTemp" placeholder="300°F">
+                <input type="number" class="form-control" id="ovenTemp" name="ovenTemp" placeholder="300°F">
             </div>
             <div class="mb-3 mt-3">
                 <label for="ovenTime" class="form-label">Oven Time</label>
-                <input type="number" class="form-control" id="ovenTime" placeholder="30 min">
+                <input type="number" class="form-control" id="ovenTime" name="ovenTime" placeholder="30 min">
             </div>
+        </form>
+            <button type="button" class="mb-3 mt-3 btn btn-outline-primary" id="convertBtn">Convert</button>
+        <form>
             <h3 class="mt-3">Air Fryer Directions</h3>
 
             <div class="mb-3 mt-3">
                 <label for="airTemp" class="form-label">Airfryer Temp</label>
-                <input type="number" class="form-control" id="airTemp"  disabled placeholder="275°F">
+                <div type="number" class="form-control" id="airTemp" name="airTemp">275°F</div>
             </div>
             <div class="mb-3 mt-3">
                 <label for="airTime" class="form-label">Airfryer Time</label>
-                <input type="number" class="form-control" id="airTime" disabled placeholder="24 min">
+                <div type="number" class="form-control" id="airTime" name="airTime">24 min</div>
             </div>
 
             
