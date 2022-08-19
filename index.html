@@ -5,38 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air Fryer Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-    <div class="title">Have a receipe that requires a traditional oven? Enter the temperature and time below to convert the instructions for an air fryer!</div>
-
-    <div class="container">
-        <div class="header">Oven Directions</div>
-        <div id="ovenTemp">
-            <div>Oven Temp:</div>
-            <input type="number" id="temp">
-        
-        </div>
-        <div id="ovenTime">
-            <div>Oven Time:</div>
-            <input type="number" id="time">
-        </div>
-        <div class="header">Air Fryer Directions</div>
-        <div class="airFryContainer">
-            <div id="airCont"> 
-                <div class="airTemp">
-                    Air Fryer Temp:
-                </div>
-                <div class="airFryResult"></div>
+    <div class="container-md border my-5" id="calc">
+        <form class="row">
+            <h3 class="mt-3">Oven Directions</h3>
+            <div class="mb-3 mt-3">
+                <label for="formGroupExampleInput" class="form-label">Oven Temp</label>
+                <input type="number" class="form-control" id="ovenTemp" placeholder="300°F">
             </div>
-            <div id="airContTime">
-                <div class="airTime">Air Fryer Time:</div>
-                <div class="airTimeResult"></div>
+            <div class="mb-3 mt-3">
+                <label for="formGroupExampleInput" class="form-label">Oven Time</label>
+                <input type="number" class="form-control" id="ovenTime" placeholder="30 min">
+            </div>
+            <h3 class="mt-3">Air Fryer Directions</h3>
+
+            <div class="mb-3 mt-3">
+                <label for="formGroupExampleInput" class="form-label">Airfryer Temp</label>
+                <input type="number" class="form-control" id="airTemp"  disabled placeholder="275°F">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="formGroupExampleInput" class="form-label">Airfryer Time</label>
+                <input type="number" class="form-control" id="airTime" disabled placeholder="24 min">
             </div>
 
-        </div>
+            
+            
+        </form>
     </div>
+    <style>
+        body {
+        }
 
-    <script src="script.js"></script>
+        #calc {
+            background-color: lightgray;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    </style>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="calc.js"></script>
 </body>
 </html>
